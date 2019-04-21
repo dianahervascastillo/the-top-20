@@ -68,13 +68,6 @@ const api = {
     };
 
     return get(config);
-  },
-  getDetails: () => {
-    const config = {
-      path: DETAILS,
-    };
-
-    return get(config);
   }
 };
 
