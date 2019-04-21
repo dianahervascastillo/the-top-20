@@ -30,7 +30,7 @@ Accessibility wise, I've just done the very basic, trying to have the most seman
 
 I've tested it using BrowersStack for ie11 and locally with Firefox, Chrome, Safari
 
-My node version is 10.15.1
+My node version is 10.15.1 (but it should work with 10.14.0 too)
 
 
 #### Serve: run development server at http://localhost:8080/
