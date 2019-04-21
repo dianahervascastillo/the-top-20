@@ -1,0 +1,126 @@
+@import '~bulma/bulma'
+@import 'components/tabs'
+@import 'components/modal'
+
+/* RESET AND NORMALISE----------------------------------------
+ ------------------------------------------------------------*/
+html
+  line-height: 1.1
+  -webkit-text-size-adjust: 100%
+html
+  box-sizing: border-box
+*,
+*:before,
+*:after
+  box-sizing: inherit
+body
+  margin: 0
+  font-size: 16px
+  font-family: Helvetica, Arial, sans-serif
+  color: #353E44
+a
+  background-color: transparent
+img
+  border-style: none
+
+
+html,body
+  padding: 0
+  margin: 0
+  height: 100%
+
+.app
+  height: 100%
+
+.main
+  min-height: 100%
+  padding-right: 1em
+  padding-left: 1rem
+  max-width: 1400px
+  margin-right: auto
+  margin-left: auto
+
+  &.loading
+    display: flex
+    justify-content: center
+    align-items: center
+
+.loading-container
+  width: 400px
+
+header
+  margin-top: 1rem
+
+.categories
+  margin-bottom: 1rem
+  & > h2
+    margin-bottom: 2rem
+    font-size: 1.25rem
+
+
+.data-list
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+
+.data-list
+  .card
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1)
+    transition: transform .3s ease-out
+    position: relative
+    margin-top: 1rem
+    margin-bottom: 1rem
+    flex: 0 0 300px
+    @media only screen and (min-width: 600px)
+      flex: 0 0 250px
+  .card-content
+    position: absolute
+    bottom: 0
+    left: 0
+    background-color: rgba(0, 0, 0, .5)
+    width: 100%
+
+  .card:hover
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .2)
+    transform: translateY(-1px)
+
+  h3
+    color: #fff
+    margin: 0
+    font-size: 1.25rem
+    text-align: left
+
+.card--button
+  border: 0
+  margin: 0
+  padding: 0
+  background-color: transparent
+  display: flex
+
+  &:hover
+    cursor: pointer
+
+
+.image img
+  width: 100%
+  @media only screen and (min-width: 600px)
+    width: 250px
+    height: 375px
+
+.general-info
+  display: flex
+  margin-bottom: 1rem
+  h2
+    margin-right: .5rem
+
+.genres li
+  display: inline-block
+
+  &:not(:last-child):after
+    content: ','
+    display: inline-block
+    margin-left: .125rem
+    margin-right: .25rem
+
+
+
