@@ -18,7 +18,7 @@
     "serve": "cross-env NODE_ENV=development webpack-dev-server --config webpack.config.js --hot",
     "test": "jest",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "@babel/core": "^7.3.4",
