@@ -12,11 +12,13 @@
   "bugs": {
     "url": "https://github.com/dianahervascastillo/the-top-20/issues"
   },
-  "homepage": "https://github.com/dianahervascastillo/the-top-20#readme",
+  "homepage": "https://dianahervascastillo.github.io/the-top-20",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --config webpack.config.js",
     "serve": "cross-env NODE_ENV=development webpack-dev-server --config webpack.config.js --hot",
-    "test": "jest"
+    "test": "jest",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "@babel/core": "^7.3.4",
@@ -49,6 +51,7 @@
   },
   "dependencies": {
     "es6-promise": "^4.2.6",
+    "gh-pages": "^2.0.1",
     "isomorphic-fetch": "^2.2.1",
     "react": "^16.8.4",
     "react-dom": "^16.8.4"
