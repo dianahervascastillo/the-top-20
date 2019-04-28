@@ -1,5 +1,20 @@
 # The Top 20's
 
+#### Live Site
+
+https://dianahervascastillo.github.io/the-top-20/
+
+#### Serve: run development server at http://localhost:8080/
+`npm run serve`
+
+#### Build: build for production
+`npm run build`
+
+#### Test: run tests with Jest
+`npm run test`
+
+
+#### Some literature
 
 This project is just a one page app, which fires the calls to the 3 different endpoints to get the 20 most popular films, people and tv shows. When you click on any of the different items cards(movie, actor or tv show) you'll see a modal window showing some more basic info about that item. 
 
@@ -34,13 +49,3 @@ I've tested it using BrowersStack for ie11 and locally with Firefox, Chrome, Saf
 My node version is 10.15.1 (but it should work with 10.14.0 too)
 
 
-#### Serve: run development server at http://localhost:8080/
-`npm run serve`
-
-#### Build: build for production
-`npm run build`
-
-
-
-#### Test: run tests with Jest
-`npm run test`
